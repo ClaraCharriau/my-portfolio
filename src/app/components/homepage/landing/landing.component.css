@@ -1,0 +1,89 @@
+.landing {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+}
+
+.java-greeting {
+  text-align: left;
+  width: 32ch;
+  animation: type 5s steps(43), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  margin: 0;
+  font-size: clamp(25px, 3vw, 40px);
+}
+.green {
+  color: var(--darkgreen);
+}
+
+.homepage-text {
+  font-size: 20px;
+}
+
+/* Découvrez mes projets */
+.CTA-button {
+  font-size: 20px;
+  border: 1.5px solid var(--darkgreen);
+  border-radius: 25px;
+  text-decoration: none;
+  padding: 10px;
+  color: var(--darkgreen);
+
+  cursor: pointer;
+  box-shadow: -2px 4px 0px 0px var(--yellow);
+  transition: all 0.1s;
+}
+.CTA-button:hover {
+  transform: translateY(2px) translateX(-4px);
+  transition: all 0.1s;
+  box-shadow: none;
+  background-color: var(--yellow);
+  color: var(--bodycolor);
+}
+
+
+/* Animation texte */
+@keyframes type {
+  0% {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Media queries */
+@media (max-width: 850px) {
+
+  .landing {
+    align-items: center;
+    height: 50vh;
+  }
+
+}
+
+/* Media queries */
+@media (max-width: 500px) {
+
+  .landing {
+    align-items: center;
+    height: 50vh;
+    width: 90vw;
+  }
+
+  .java-greeting {
+    width: 80vw;
+    animation: none;
+    white-space: normal;
+    word-wrap:break-word;
+    border-right: 0;
+  }
+
+}

@@ -1,1 +1,92 @@
-/* You can add global styles to this file, and also import other style files */
+/* FONTS */
+/* Trocchi */
+@import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
+/* Nunito */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* VARIABLES */
+:root {
+    --darkgrey: #504d53;
+    --yellow: #f0bd68;
+    --darkgreen: #2e7370;
+    --bodycolor: #fff7e8;
+}
+
+/*** General selectors ***/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    color: var(--darkgrey);
+    background-color: var(--bodycolor);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    margin: auto 50px;
+}
+
+h1 {
+    font-family: 'Trocchi', serif;
+    font-size: 1.2em;
+    color: var(--darkgrey);
+}
+h1:hover, h1:focus {
+    color: var(--yellow);
+}
+
+h2 {
+    font-size: 40px;
+    color: var(--darkgrey);
+    font-family: 'Trocchi', sans-serif;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-size: 20px;
+    color: var(--darkgrey);
+    font-family: 'Trocchi', serif;
+    margin-bottom: -7px;
+}
+
+p {
+    line-height: 30px;
+}
+
+a {
+    color: var(--darkgrey);
+}
+
+a:focus,
+a:hover {
+    color: var(--darkgreen);
+}
+
+hr {
+    border-top: 2px solid var(--yellow);
+    width: 50px;
+}
+
+iframe {
+    border: 0;
+    margin: 10px;
+}
+
+@media (max-width: 915px) {
+
+    h1 {
+        display: none;
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    body {
+        margin: auto 30px;
+    }
+
+}
