@@ -1,0 +1,192 @@
+/******************* HEADER - NAV BAR *********************/
+
+h1 {
+    font-weight: 300;
+    transition: all 0.3s;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: sticky;
+    top: 25px;
+    z-index: 5;
+}
+
+/***********/
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 10px;
+    border-radius: 25px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+
+/* LOGO */
+.logo-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-header:hover h1 {
+    transition: all 0.3s;
+    color: var(--yellow);
+}
+
+.logo-img {
+    width: 70px;
+    height: 70px;
+}
+
+
+/* MENU */
+.navbar {
+    color: var(--darkgrey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navbar a {
+    text-align: center;
+    font-size: clamp(12px, 3vw, 16px);
+    color: var(--darkgrey);
+    padding: 10px;
+    transition: all 0.3s;
+    border-radius: 25px;
+    border: 1.5px solid rgb(255, 255, 255, 0)
+}
+
+.navbar a:focus,
+.navbar a:hover {
+    border: 1.5px solid var(--darkgreen);
+    color: var(--darkgreen);
+    transition: all 0.3s;
+}
+
+/* MENU BURGER */
+.menu>a {
+    overflow: hidden;
+}
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: var(--darkgreen);
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    /* Animation du burger */
+    transition: transform 900ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+
+.menu-button::before {
+    content: '';
+    margin-top: -8px;
+}
+
+.menu-button::after {
+    content: '';
+    margin-top: 8px;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
+    background: rgb(255, 255, 255, 0);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+}
+
+
+@media (max-width: 850px) {
+
+
+    .top-nav {
+        height: 60px;
+        padding: 0px 10px;
+    }
+
+    .nav-left {
+        gap: 0;
+    }
+
+    /* NAVBAR - BURGER */
+    .menu-button-container {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 70px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-inline-start: 0;
+        font-size: 20px;
+    }
+
+    #menu-toggle~.menu a {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #menu-toggle:checked~.menu a {
+        font-size: 16px;
+        height: 6em;
+        padding: 2.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .menu>a {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        border-radius: 0;
+        background-color: var(--bodycolor);
+    }
+
+    .menu>a:not(:last-child) {
+        border-bottom: 1px solid #444;
+    }
+
+
+}
