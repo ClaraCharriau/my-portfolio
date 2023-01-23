@@ -1,0 +1,116 @@
+a {
+    text-decoration: none;
+    line-height: 25px;
+}
+hr {
+    display: none;
+}
+h3 {
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: var(--bodycolor);
+    display: flex;
+    width: 100vw;
+    height: 200px;
+}
+
+/* menu-left logo social */
+.menu-left, .social {
+    width: 20%;
+}
+.logo {
+    width: 50%;
+}
+
+
+/* Menu gauche */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100px;
+}
+
+/* Logo centre */
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.logo-footer {
+    background: url('/assets/logo/cc-logo-large.png') no-repeat;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto 10px auto;
+}
+.copyright {
+    font-size: 10px;
+    text-align: center;
+}
+
+/* Réseaux sociaux droite */
+.contact-title {
+    text-align: right;
+}
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap-reverse;
+    height: 60px;
+}
+
+
+/******************* ICONS STYLE *********************/
+.bi {
+    /* espace entre les éléments de la liste et les icônes */
+    margin-right: 20px;
+    margin-bottom: -2px;
+}
+.social-icon-footer {
+    margin-right: 8px;
+}
+
+/******************* MEDIA QUERIES *********************/
+@media (max-width: 850px) {
+
+    a {
+         line-height: 40px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    hr {
+        display: block;
+    }
+
+    .contact-title {
+        text-align: center;
+    }
+
+    .menu-left, .menu, .logo, .social, .social-links {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+
+    .logo {
+        order: 4;
+    }
+  
+  }
