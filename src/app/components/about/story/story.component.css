@@ -1,0 +1,53 @@
+img {
+    object-fit: cover;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 60px 100px;
+}
+
+.about-me-blocks {
+    width: 50%;
+}
+
+/* Photos */
+.profile-picture,
+.being-creative {
+    height: 270px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-me-text {
+    text-align: center;
+    font-size: 18px;
+}
+
+.about-me-text span {
+    color: #2e7370;
+}
+
+@media (max-width: 850px) {
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+        margin: 60px 10px;
+    }
+    .row:nth-of-type(2) {
+        flex-direction: column-reverse;
+    }
+
+    .about-me-blocks {
+        width: 100%;
+    }
+
+    .profile-picture,
+    .being-creative {
+        margin: 0;
+    }
+
+}
