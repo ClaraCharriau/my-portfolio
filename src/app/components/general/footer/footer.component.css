@@ -14,7 +14,7 @@ footer {
     padding-top: 35px;
     padding-bottom: 30px;
     display: flex;
-    width: 100vw;
+    justify-content: center;
     height: 200px;
 }
 
