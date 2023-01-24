@@ -12,6 +12,7 @@ import { StoryComponent } from './components/about/story/story.component';
 import { SkillsComponent } from './components/about/skills/skills.component';
 import { ExperiencesComponent } from './components/about/experiences/experiences.component';
 import { DownloadCvComponent } from './components/about/download-cv/download-cv.component';
+import { ConnectWithMeComponent } from './components/about/connect-with-me/connect-with-me.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { DownloadCvComponent } from './components/about/download-cv/download-cv.
     StoryComponent,
     SkillsComponent,
     ExperiencesComponent,
-    DownloadCvComponent
+    DownloadCvComponent,
+    ConnectWithMeComponent
   ],
   imports: [
     BrowserModule,

@@ -38,13 +38,6 @@ ul.certif>li>span {
     margin-bottom: 5px;
 }
 
-.center-element-about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 /* scholar svg */
 .scholar-logo {
     height: 20px;
