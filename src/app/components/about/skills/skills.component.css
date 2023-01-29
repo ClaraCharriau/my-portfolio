@@ -101,3 +101,12 @@
     }
 
 }
+
+@media (max-width: 500px) {
+    
+        /* Video et graphisme trop long en version mobile */
+        .xs-progress {
+            text-align: start;
+            font-size: 10px;
+        }
+}
