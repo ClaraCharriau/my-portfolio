@@ -1,0 +1,112 @@
+.skills-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+/* h3 */
+.curriculum-title {
+    font-family: 'Trocchi', serif;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+/* SKILLSBAR */
+
+.skills-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+}
+
+.skills-column {
+    flex: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.progress-container {
+    margin-bottom: 50px;
+    font-size: 18px;
+    position: relative;
+    width: 100%;
+}
+
+.progress-value,
+.progress-badge {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.progress-badge {
+    position: absolute;
+    top: -17px;
+    left: 0;
+}
+
+.progress-details {
+    font-size: 13px;
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+
+.progress-value {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    font-size: 14px;
+}
+
+/* Softskills */
+.progress-green {
+    border-radius: 5px;
+    margin-top: 5px;
+    height: 8px;
+    background: #2e737051;
+}
+
+.progress-bar-green {
+    border-radius: 5px;
+    height: 8px;
+    background: var(--darkgreen);
+}
+
+/* Abilities */
+.progress-yellow {
+    border-radius: 5px;
+    margin-top: 5px;
+    height: 8px;
+    background: #ece78951;
+}
+
+.progress-bar-yellow {
+    border-radius: 5px;
+    height: 8px;
+    background: var(--yellow);
+}
+
+@media (max-width: 850px) {
+
+    .skills-section {
+        flex-direction: column;
+    }
+
+    .skills-box {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 500px) {
+    
+        /* Video et graphisme trop long en version mobile */
+        .xs-progress {
+            text-align: start;
+            font-size: 10px;
+        }
+}

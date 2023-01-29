@@ -22,7 +22,7 @@
 body {
     font-size: 16px;
     color: var(--darkgrey);
-    background-color: var(--bodycolor);
+    background-image: linear-gradient(to right bottom, #fcecd0, #fde6c2, #fde6c2, #fde6c2, #fcecd0, #f3eacf, #eae8ce, #e2e5ce, #c8d9bf, #aacdb5, #8bc0b1, #6cb3b0);
     font-family: 'Nunito', sans-serif;
     font-weight: 300;
     margin: auto 50px;
@@ -42,7 +42,7 @@ h2 {
     color: var(--darkgrey);
     font-family: 'Trocchi', sans-serif;
     text-align: center;
-    margin-bottom: 25px;
+    margin: 10px 0 25px;
 }
 
 h3 {

@@ -1,0 +1,43 @@
+.center-element-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-button {
+    font-size: 20px;
+    border: 1.5px solid var(--darkgreen);
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 13px 76px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--darkgreen);
+    cursor: pointer;
+    box-shadow: -2px 4px 0px 0px var(--yellow);
+    transition: all 0.1s;
+}
+
+.resume-button:hover {
+    transform: translateY(2px) translateX(-4px);
+    margin-top: 3px;
+    transition: all 0.1s;
+    box-shadow: none;
+    background-color: var(--yellow);
+    border: var(--yellow);
+    color: var(--bodycolor);
+}
+
+.btn-container {
+    /* Permet de ne pas faire se déplacer les éléments textes au dessus au hover du bouton */
+    height: 40px;
+}
+
+@media (max-width: 500px) {
+
+    .resume-button {
+        padding: 15px 0;
+        margin: 0;
+        width: 100%;
+    }
+}

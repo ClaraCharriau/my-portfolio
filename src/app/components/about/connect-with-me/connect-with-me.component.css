@@ -1,0 +1,22 @@
+.center-element-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.curriculum-title {
+  font-family: 'Trocchi', serif;
+  font-size: 25px;
+}
+
+.container-social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+svg {
+  width: 30px;
+  height: 30px;
+}

@@ -1,0 +1,68 @@
+.experience-section {
+    display: flex;
+    gap: 50px;
+}
+
+.col-left {
+    width: 60%;
+}
+
+.curriculum-title {
+    font-family: 'Trocchi', serif;
+    font-size: clamp(20px, 3vw, 25px);
+    text-align: left;
+}
+
+.experiences,
+.languages,
+.certif {
+    line-height: 25px;
+    list-style: none;
+    color: var(--darkgrey);
+}
+
+.languages span {
+    color: #2e7370;
+    font-weight: 600;
+}
+
+ul.experiences>li,
+ul.certif>li {
+    margin-bottom: 25px;
+}
+
+ul.experiences>li:nth-child(odd),
+ul.certif>li>span {
+    color: var(--darkgreen);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* scholar svg */
+.scholar-logo {
+    height: 20px;
+    margin: 0 5px -5px;
+    fill: none;
+    stroke: var(--darkgrey);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+@media (max-width: 850px) {
+
+    li {
+        font-size: clamp(13px, 3vw, 16px);
+        line-height: normal;
+    }
+
+    .experience-section {
+        flex-direction: column;
+    }
+
+    .col-left {
+        width: 100%;
+    }
+
+}
