@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class DownloadCvComponent {
 
+  downloadPDF() {
+    let link = document.createElement('a');
+    link.setAttribute('type', 'hidden');
+    link.setAttribute('href', 'assets/uploads/charriau-cv.pdf');
+    link.setAttribute('download', `charriau-cv.pdf`);
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }
+
 }
